@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const aboutKey = '/src/assets/about.png'
 const newsKey = '/src/assets/news.png'
 const serviceKey = '/src/assets/service.png'
@@ -11,11 +10,13 @@ const webp = import.meta.glob('/src/assets/*.png',{
   import: 'default'
 });
 
-const toPath = (str:string)=> import.meta.env.BASE_URL + str.startsWith('.')?str.slice(1):str;
+const toPath = (str:string)=> import.meta.env.BASE_URL + str.startsWith('.')?str:('.'+str);
 const aboutWebp = toPath(webp[aboutKey] as string)
 const newsWebp = toPath(webp[newsKey] as string)
 const serviceWebp = toPath(webp[serviceKey] as string)
 const contactWebp = toPath(webp[contactKey] as string)
+
+console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
 
 </script>
 <template>

@@ -6,9 +6,10 @@ const webp = import.meta.glob('/src/assets/main.png',{
   import: 'default'
 })
 
-const toPath = (str:string)=> import.meta.env.BASE_URL + str.startsWith('.')?str.slice(1):str;
+const toPath = (str:string)=> import.meta.env.BASE_URL+ str.startsWith('.')?str:('.'+str);
 const imgWebp = toPath(webp['/src/assets/main.png'] as string)
 
+console.log(imgWebp)
 
 </script>
 <template>
