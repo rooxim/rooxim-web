@@ -19,7 +19,7 @@ console.log(imgWebp)
          :style="{
             '--imgWebp':'url('+imgWebp+')'
     }">
-      <div class="content" v-prlx="{ speed: 0.4, limit: {min:0, max:390}   }">
+      <div class="content" v-prlx="{ speed: 0.4, limit: {min:0, max:390}}" v-prlx.mobile="{ speed: 0.4, limit: {min:0, max:390}}">
         <div class="subMessage">
           Think next always.
         </div>
