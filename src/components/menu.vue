@@ -86,7 +86,6 @@ console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
     width: 100%;
   }
 }
-
 .card{
   height: 300px;
   display: flex;
@@ -123,6 +122,14 @@ console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
     width: 100%;
     padding: 20px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card{
+    &:before{
+      background-size: 600px;
+    }
   }
 }
 </style>
