@@ -15,6 +15,7 @@ console.log(imgWebp)
 <template>
   <div fluid >
     <div class="main"
+         v-prlx.mobile.background="{ direction: 'y', speed: 0.07 }"
          v-prlx.background="{ direction: 'y', speed: 0.07 }"
          :style="{
             '--imgWebp':'url('+imgWebp+')'

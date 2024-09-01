@@ -27,6 +27,7 @@ console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
           <v-card to="/about"
                   class="card elevation-6"
                   v-prlx="{ custom:true, limit:{min:0, max:100} }"
+                  v-prlx.mobile="{ custom:true, limit:{min:0, max:100} }"
                   :style="{
                     '--imgWebp':`url(${aboutWebp})`
                   }"
@@ -38,6 +39,7 @@ console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
           <v-card to="/news"
                   class="card elevation-6"
                   v-prlx="{ custom:true, limit:{min:0, max:100} }"
+                  v-prlx.mobile="{ custom:true, limit:{min:0, max:100} }"
                   :style="{
                     '--imgWebp':`url(${newsWebp})`
                   }"
@@ -49,6 +51,7 @@ console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
           <v-card to="/service"
                   class="card elevation-6"
                   v-prlx="{ custom:true, limit:{min:0, max:100} }"
+                  v-prlx.mobile="{ custom:true, limit:{min:0, max:100} }"
                   :style="{
                     '--imgWebp':`url(${serviceWebp})`
                   }"
@@ -60,6 +63,7 @@ console.log(aboutWebp,newsWebp,serviceWebp,contactWebp)
           <v-card to="contact"
                   class="card elevation-6"
                   v-prlx="{ custom:true, limit:{min:0, max:100} }"
+                  v-prlx.mobile="{ custom:true, limit:{min:0, max:100} }"
                   :style="{
                     '--imgWebp':`url(${contactWebp})`
                   }"
