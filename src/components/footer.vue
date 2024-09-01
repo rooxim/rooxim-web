@@ -41,7 +41,7 @@
                   <span v-else>会社概要</span>
                 </li>
                 <li>
-                  <router-link to="/src/components/newsTimeline" v-if="$route.path!='/news'">ニュース</router-link>
+                  <router-link to="/news" v-if="$route.path!='/news'">ニュース</router-link>
                   <span v-else>ニュース</span>
                 </li>
                 <li>
