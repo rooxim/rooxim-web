@@ -11,7 +11,7 @@ const webp = import.meta.glob('/src/assets/*.png',{
   import: 'default'
 });
 
-const toPath = (str:string)=> str.startsWith('.')?str.slice(1):str;
+const toPath = (str:string)=> import.meta.env.BASE_URL + str.startsWith('.')?str.slice(1):str;
 const aboutWebp = toPath(webp[aboutKey] as string)
 const newsWebp = toPath(webp[newsKey] as string)
 const serviceWebp = toPath(webp[serviceKey] as string)
