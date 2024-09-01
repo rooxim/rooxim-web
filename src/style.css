@@ -71,3 +71,7 @@ h2{
   bottom: -0.05em;
   box-sizing: border-box;
 }
+
+.v-container{
+  max-width: 1024px !important;
+}

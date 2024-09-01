@@ -147,8 +147,8 @@ const onSubmit = () =>{
   <v-app>
     <Header />
     <v-main>
-      <h1>お問い合わせ</h1>
       <v-container class="container">
+        <h1>お問い合わせ</h1>
         <v-row align="center">
           <form target="hidden_iframe" :action="actionURL" :onSubmit="submit">
             <v-col cols="12" v-for="form in survey">
