@@ -55,7 +55,7 @@ console.log(imgWebp)
   }
 }
 .content{
-  margin-top: -400px;
+  margin-top: -380px;
   display: flex;
   flex-direction: column;
   align-items: center;
