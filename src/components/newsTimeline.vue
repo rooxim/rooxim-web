@@ -4,13 +4,13 @@ const timelines = [
     date: '2016/09/13',
     title: '開発拠点設立',
     content: `ベトナム、ホーチミン市に開発拠点を設立しました。`,
-    color: 'blue'
+    color: 'black'
   },
   {
     date: '2017/10/20',
     title: '完全子会社設立',
     content: ` ベトナム、ホーチミン市に完全子会社「ROOXIM COMPUTER SCIENCE Co.,Ltd」を設立しました。`,
-    color: 'blue'
+    color: 'black'
   },
   {
     date: '2019-07-09',
